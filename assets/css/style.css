@@ -216,6 +216,63 @@ html {
     line-height: 24px;
     margin: -3px;
 }
+/* Places */
+.place-list{
+    margin: 32px -8px 0;
+    padding: 35px 0;
+}
+
+.place-item {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-content {
+    color: #000;
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 550px;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-description {
+    margin: 15px 0;
+    line-height: 1.4; 
+}
+
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 17.2px;
+    display: inline-block;
+
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: rgb(216, 206, 206);
+} 
+
 
 /*Footer section*/
 #footer {
