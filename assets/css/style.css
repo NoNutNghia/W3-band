@@ -304,6 +304,7 @@ html {
     min-height: 200px;
     position: relative;
     max-width: (100% - 32px);
+    animation: modalAppear ease .5s;
 }
 
 .modal-header {
@@ -367,6 +368,17 @@ html {
     text-align: right;
 }
 
-.modal-footer a{
+.modal-footer a {
     color: #2196F3;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
