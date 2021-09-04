@@ -1,0 +1,224 @@
+/*Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+
+}
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff!important;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: #000;
+    z-index: 2;
+}
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+} 
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    color: #000;
+    background-color: rgb(216, 206, 206);
+} 
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+    display: block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: -1px -1px 7px 1px rgba(0,0,0,0.65);
+    top: 100%;
+    min-width: 160px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+    font: bold;
+
+}
+#header .search-btn{
+    float: right;
+    padding: 0px 21px;
+    cursor: pointer;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+}
+#nav .subnav a {
+    color: #000;
+    line-height: 40px;
+    
+}
+#header .search-btn:hover {
+    background-color:  #f44336;
+    cursor: pointer;
+}
+
+#slider {
+    margin-top: 46px;  
+    padding-top: 50%;
+    background: url(/assets/img/slider-chicago.jpg) top center / cover no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+#slider .text-content {
+    position: absolute;
+    color: #fff; 
+    bottom: 47px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500px;
+    font-size: 24px;
+}
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+
+}
+#content {
+    width: 100%;
+
+}
+#content .content-section {
+    width: 800px;
+    padding: 64px 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}    
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    padding-top: 48px;
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+/*Tour section */
+.tour-section{
+    background: #000;
+    min-width: 816px;
+}
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ccc;
+    color: #757575;
+    list-style: none;
+}
+
+.tickets-list .sold-out {
+    color: #fff;
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .qualtity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    margin: -3px;
+}
+
+/*Footer section*/
+#footer {
+
+        
+}
