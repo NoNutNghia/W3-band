@@ -6,15 +6,33 @@
 }
 
 html {
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 /*Common*/
-.clear{
-    clear: both;
-}
 
 .text-white{
     color: #fff !important;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 17.2px;
+    display: inline-block;
+    border: none;
+
+}
+
+.btn:hover {
+    color: #000;
+    background-color: rgb(216, 206, 206);
+    cursor: pointer;
+} 
+
+.pull-right {
+    float: right !important;
 }
 
 .row{
@@ -56,6 +74,7 @@ html {
 .mt-16{
     margin-top: 16px !important;
 }
+
 /*Main*/
 #main {
 
@@ -175,7 +194,7 @@ html {
 }
 #content .content-section {
     width: 800px;
-    padding: 64px 16px;
+    padding: 64px 0px 112px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -255,7 +274,6 @@ html {
 /* Places */
 .place-list{
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-img {
@@ -288,22 +306,6 @@ html {
     margin: 15px 0;
     line-height: 1.4; 
 }
-
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 17.2px;
-    display: inline-block;
-    border: none;
-
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: rgb(216, 206, 206);
-    cursor: pointer;
-} 
 
 /* Contact form */
 .contact-content {
@@ -343,17 +345,18 @@ html {
     color: #000;
 }
 
-/*Footer section*/
-#footer {
-
-        
+/* Map section */
+.map-section img{
+    width: 100%;
+    filter: grayscale(50%);
 }
 
-.modal.open{
+/*Modal board */
+.modal.open {
     display: flex;
 }
 
-.modal{
+.modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -363,6 +366,7 @@ html {
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 .modal-container {
@@ -449,3 +453,35 @@ html {
         transform: translateY(0);
     }
 }
+
+/*Footer section*/
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color:rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copy-right a:hover,
+#footer .social-list a:hover {
+    opacity: 0.5;
+}
+
+#footer .copy-right {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 15px;
+}
+
+#footer .copy-right a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
