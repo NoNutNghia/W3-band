@@ -8,6 +8,7 @@
     <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts-icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
 </head>
 <body>
     <!-- Main area -->
@@ -39,6 +40,9 @@
         <!-- Begin : Search button -->
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+            </div>
+            <div id="menu-mobile" class="menu-mobile-btn">
+                <i class="menu-mobile-icon ti-menu"> </i>
             </div>
         <!-- End: Search button -->
 
@@ -231,27 +235,51 @@
 
     </div>
     <!-- Main area -->
-
+    
     <script>
-        const buyBtns = document.querySelectorAll('.js-buy-tickets')
-        const modal = document.querySelector('.js-modal')
-        const modalContainer = document.querySelector('.js-modal-container')
-        const modalClose = document.querySelector('.js-modal-close')
+        const buyBtns = document.querySelectorAll('.js-buy-tickets');
+        const modal = document.querySelector('.js-modal');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const modalClose = document.querySelector('.js-modal-close');
+
         function showBuyTickets() {
-            modal.classList.add('open')
+            modal.classList.add('open');
         }
         function hideBuyTickets() {
             modal.classList.remove('open');
         }
         for(const buyBtn of buyBtns){
-            buyBtn.addEventListener('click', showBuyTickets)
+            buyBtn.addEventListener('click', showBuyTickets);
         }
 
-        modalClose.addEventListener('click', hideBuyTickets)
-        modal.addEventListener('click', hideBuyTickets)
+        modalClose.addEventListener('click', hideBuyTickets);
+        modal.addEventListener('click', hideBuyTickets);
         modalContainer.addEventListener('click', function (event) {
-            event.stopPropagation()
+            event.stopPropagation();
         })
+
+        /* Close / Open menu */
+        const menu = document.getElementById('header');
+        const menuMobile = document.getElementById('menu-mobile');
+        const heightHeader = menu.clientHeight;
+        menuMobile.onclick = function() {
+            const isClosed = menu.clientHeight === heightHeader; 
+            if( isClosed === true ) {
+                menu.style.height = 'auto';
+            } else {
+                menu.style.height = null;
+            }
+        }
+
+        /* Auto close menu when click a nav */
+        const menuItems = document.querySelectorAll('#nav li a[href *= "#"]');
+        for(const menuItem of menuItems) {
+            menuItem.onclick = function() {
+                menu.style.height = null;
+            }
+        }
+        
     </script>
+
 </body>
 </html>
