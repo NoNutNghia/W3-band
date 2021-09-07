@@ -3,9 +3,35 @@
             
 }
 
+/* Tablet & Mobile */ 
+@media only screen and (max-width: 1023px) {
+    .btn {
+        padding: 15px 16px;
+    }  
+    #nav .subnav a {
+        padding: 3px 12px;
+    }
+    .form-submit .form-control {
+        padding: 15px;
+    }
+    .social-list {
+        font-size: 48px;
+    }
+    #footer .copy-right a {
+        display: inline-block;
+        padding: 12px 0;
+    }
+    #footer .social-list {
+        font-size: 33px;
+    }
+
+    #footer .social-list a {
+        padding: 0 8px;
+    }
+}
+
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
-
 }
 
 /* Mobile */
@@ -64,7 +90,7 @@
     }
 
     .form-submit {
-        margin-top: 16px !important;
+        margin-top: 32px !important;
     }
 
     .s-mt-8 {
