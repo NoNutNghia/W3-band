@@ -55,10 +55,20 @@
     }
 
     #content .member-img {
-        width: 60%;
+        width: 60% !important;
     }
 
+    .s-full-width, 
     .s-col-full {
-        width: 100%;
+        width: 100% !important;
     }
+
+    .form-submit {
+        margin-top: 16px !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
 }
