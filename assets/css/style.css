@@ -184,7 +184,7 @@ html {
 #slider {
     margin-top: 46px;  
     padding-top: 50%;
-    background: url(/assets/img/slider-chicago.jpg) top center / cover no-repeat;
+    background: url(../img/slider-chicago.jpg) top center / cover no-repeat;
     position: relative;
     z-index: 1;
 }
@@ -196,17 +196,23 @@ html {
     right: 0;
     left: 0;
     text-align: center;
+    text-shadow: 0 0 12px #000;
 }
 
 #slider .text-heading {
     font-weight: 500px;
     font-size: 24px;
+    font-weight: bolder;
 }
-#slider .text-description {
-    font-size: 15px;
-    margin-top: 25px;
 
+#slider .text-description {
+    font-size: 17px;
+    margin-top: 25px;
+    font-weight: bolder;
 }
+
+
+
 #content {
     max-width: 100%;
 
@@ -368,6 +374,7 @@ html {
     font-size: 15px;
     padding: 11px 16px;
     float: right;
+    appearance: none;
 }
 
 .form-submit .submit-btn:hover {
